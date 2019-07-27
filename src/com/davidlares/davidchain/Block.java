@@ -58,6 +58,6 @@ public class Block {
 	
 	@Override
 	public String toString() {
-		return this.id + this.transaction + " - " + this.hash + " - " + this.prevHash + " - ";
+		return "(" + this.id + ")" + this.transaction + " - " + this.hash + " - " + this.prevHash + " - ";
 	}
 }
