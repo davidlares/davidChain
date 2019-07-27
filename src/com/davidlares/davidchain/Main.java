@@ -4,6 +4,8 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Blockchain - davidChain");
+		// Creating a block
+		Block genesis = new Block(0, "Genesis transaction", Stats.GENESIS);
 	}
 
 }
