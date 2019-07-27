@@ -51,8 +51,9 @@ public class Block {
 	
 	public void generateHash() {
 		String dataToHash = Integer.toString(id) + prevHash + Long.toString(timeStamp) + Integer.toString(nonce) + transaction.toString();
-		// this dataToHash should be "encrypted" by SHA256
-		this.hash = dataToHash; // this will change
+		// encrypting data
+		String hashValue = SHA256.generateHash(dataToHash);
+		this.hash = hashValue; // finally, hashed
 	}
 	
 	@Override
