@@ -54,4 +54,9 @@ public class Block {
 		// this dataToHash should be "encrypted" by SHA256
 		this.hash = dataToHash; // this will change
 	}
+	
+	@Override
+	public String toString() {
+		return this.id + this.transaction + " - " + this.hash + " - " + this.prevHash + " - ";
+	}
 }
